@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influenciadores</title>
+    <link rel="stylesheet" href="/static/style.css" >
+</head>
+<body>
+    <div>
+        <h1>{{ Titulo }}</h1>
+    </div>
+{# percorre por todos os pokemons#}
+    {% for Influencer in ListaInfluenciadores %}
+
+    <div class="Influenceadores-card">
+        <h2> Nome: {{ Influencer.nome }}</h2>
+        <img src=" /static/influencers.jpg" class="imagem">
+        <p> Plataforma: {{ Influencer.plataforma }}</p>
+        <p> Seguidores:{{ Influencer.seguidores }} </p>
+        <p> Área: {{ Influencer.areas }} </p>
+        <br>
+         <a href="excluir/{{ Influencer.nome }}"> Excluir</a>
+         <a href="editar/{{ Influencer.nome }}"> Editar</a>
+    </div>
+
+    {% endfor %}
+
+
+</body>
+</html>

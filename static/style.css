@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebe415;
+    text-align: center;
+    padding: 50px;
+}
+
+.imagem {
+    max-width: 100px;
+}
+
+.Influenceadores-card{
+     background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 10px;
+     font-family: inherit;
+}
